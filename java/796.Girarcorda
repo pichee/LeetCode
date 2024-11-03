@@ -1,0 +1,14 @@
+class Solution {
+    public boolean rotateString(String s, String goal) {
+        int tamanho1=s.length();
+        int tamanho2=goal.length();
+
+        if (tamanho1 != tamanho2) {
+        return false;}
+        
+        String letras=s+s;
+        if(letras.contains(goal)){
+            return true;
+        }
+        return false;
+    }}
